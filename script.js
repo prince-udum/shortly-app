@@ -55,12 +55,12 @@ form.addEventListener("submit", async function submitLink(e) {
 
 function copyLink() {
   const copyBtns = document.querySelectorAll(".copy-btn");
-  const shortLink = document.querySelector(".short-link");
 
   copyBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
+      const shortLink = e.currentTarget.previousElementSibling;
       navigator.clipboard.writeText(shortLink.textContent);
-      btn.textContent = "copied";
+      btn.textContent = "copied!";
       btn.style.background = "#3b3054";
     });
   });

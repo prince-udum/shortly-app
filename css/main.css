@@ -553,6 +553,9 @@ Form
   border-bottom: 1px solid var(--grayish-violet);
   padding-bottom: 1rem;
   margin: 0;
+  color: var(--dark-violet);
+  width: 100%;
+  border: 1px solid red;
 }
 
 .shorten-link-card {
@@ -599,6 +602,42 @@ Form
     background-size: cover;
     padding: 2rem;
     border-radius: 0.7rem;
+  }
+
+  .shorten-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .generated-shorten-container p.short-link {
+    margin: 0;
+    margin-right: 2rem;
+  }
+
+  .generated-shorten-container .long-link {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .shorten-link-card div {
+    display: flex;
+    align-items: center;
+  }
+
+  .generated-shorten-container .copy-btn {
+    width: 100%;
+    display: block;
+    border: none;
+    background: var(--cyan);
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 5.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0.2rem;
   }
 }
 
@@ -732,7 +771,7 @@ Advanced-Statistics
 
   .title-text {
     max-width: 460px;
-    margin: 0 auto 5rem;
+    margin: 6rem auto 5rem;
   }
 }
 
