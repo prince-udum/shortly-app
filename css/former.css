@@ -3,7 +3,7 @@
 :root {
   /* colors */
   --cyan: hsl(180, 66%, 49%);
-  --dark-violet: hsl(258, 27%, 26%);
+  --dark-violet: hsl(257, 27%, 26%);
 
   --red: hsl(0, 87%, 67%);
 
@@ -204,9 +204,6 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    padding: 2rem 0 0;
-  }
   .mobile-menu {
     display: none;
   }
@@ -304,8 +301,12 @@ Hero
 */
 
 .hero {
+  padding-bottom: 5rem;
+  margin-bottom: -4.5rem;
+}
+
+.hero {
   overflow: hidden;
-  padding-bottom: 10rem;
 }
 
 .hero-texts {
@@ -361,17 +362,11 @@ Hero
   width: 500px;
 }
 
-@media screen and (min-width: 530px) {
-  .hero-illustration {
-    margin: 0 auto;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 5rem 0 10rem;
+    padding: 5rem 0 7rem;
     position: relative;
-    /* margin-top: -1rem; */
+    margin-top: -1rem;
   }
   .hero .section-center {
     height: 100%;
@@ -420,12 +415,9 @@ Hero
 
   .hero-texts {
     max-width: 500px;
-    /* margin-bottom: 7rem; */
   }
   .hero {
-    padding: 0;
-    height: 90vh;
-    /* padding-bottom: 5rem; */
+    padding: 5rem 0 9rem;
   }
 }
 
@@ -448,7 +440,7 @@ Form
 =====================
 */
 
-.shorten-link {
+.shorten-center {
   background: var(--dark-violet) url("../images/bg-shorten-mobile.svg")
     no-repeat;
   background-size: contain;
@@ -457,11 +449,10 @@ Form
   width: 90vw;
   max-width: 1170px;
   border-radius: 0.5rem;
-}
-
-.shorten-link-container {
-  position: absolute;
-  top: -5rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4.5rem;
 }
 
 .form-row {
@@ -527,46 +518,12 @@ Form
   opacity: 1;
 }
 
-.generated-shorten-container p.short-link {
-  color: var(--cyan);
-  text-align: left;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.generated-shorten-container .copy-btn {
-  width: 100%;
-  display: block;
-  border: none;
-  background: var(--cyan);
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  text-transform: capitalize;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 0.2rem;
-}
-
-.generated-shorten-container .long-link {
-  text-align: left;
-  border-bottom: 1px solid var(--grayish-violet);
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.shorten-link-card {
-  padding: 1rem;
-  background: white;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
-}
-
 @media screen and (min-width: 768px) {
-  .shorten-link-container {
-    top: -3.5rem;
+  .shorten-center {
+    padding: 2rem;
+    top: 3.5rem;
   }
-  .shorten-link form {
+  .shorten-center form {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -592,7 +549,7 @@ Form
     flex: 1;
   }
 
-  .shorten-link {
+  .shorten-center {
     background: var(--dark-violet) url("../images/bg-shorten-desktop.svg")
       no-repeat;
     background-position: center;
@@ -609,9 +566,8 @@ Advanced-Statistics
 */
 
 .advanced-statistics {
-  padding: 4rem 0 5rem;
+  padding: 10rem 0 5rem;
   background: #eff1f7;
-  position: relative;
 }
 
 .advanced-statistics h2 {
@@ -622,7 +578,6 @@ Advanced-Statistics
 
 .title-text {
   margin-bottom: 5rem;
-  margin-top: 6rem;
 }
 
 .advanced-statistics p {
