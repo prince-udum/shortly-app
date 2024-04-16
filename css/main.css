@@ -555,7 +555,6 @@ Form
   margin: 0;
   color: var(--dark-violet);
   width: 100%;
-  border: 1px solid red;
 }
 
 .shorten-link-card {
