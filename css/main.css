@@ -251,6 +251,7 @@ nav {
     margin-bottom: 0;
     cursor: pointer;
     font-weight: 700;
+    transition: var(--transition);
   }
 
   .navlinks a:hover {
@@ -266,6 +267,28 @@ nav {
     width: unset;
     display: unset;
     margin-bottom: 0;
+  }
+
+  .nav-cta a:hover {
+    color: white;
+  }
+
+  .nav-cta a::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    border-radius: 5rem;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+  }
+  .nav-cta a:hover::after {
+    visibility: visible;
+    opacity: 1;
   }
 
   .primary-navlinks ul {
